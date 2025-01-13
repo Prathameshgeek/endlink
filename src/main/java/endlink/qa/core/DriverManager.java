@@ -1,4 +1,4 @@
-package Entrata.Assessment.core;
+package endlink.qa.core;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -8,6 +8,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class DriverManager extends BaseClass{
 	
@@ -21,6 +24,14 @@ public class DriverManager extends BaseClass{
 	            WebDriverManager.chromedriver().setup();
 	            ChromeOptions options = new ChromeOptions();
 	          //  options.addArguments("headless");
+				//Add chrome switch to disable notification - "**--disable-notifications**"
+				//options.addArguments("--disable-notifications");
+
+				// to enable - 0 - Default (Ask), 1 - Allow,  2 - Block
+				Map<String, Object> prefs = new HashMap<>();
+				prefs.put("profile.default_content_setting_values.notifications", 1); // Sets the default to "Allow"
+				options.setExperimentalOption("prefs", prefs);
+
 	            driver = new ChromeDriver(options);
 	            break;
 	            

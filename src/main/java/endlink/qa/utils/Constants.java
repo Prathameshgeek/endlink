@@ -1,4 +1,4 @@
-package Entrata.Assessment.utils;
+package endlink.qa.utils;
 
 public interface Constants {
 	

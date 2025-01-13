@@ -1,4 +1,4 @@
-package Entrata.Assessment.utils;
+package endlink.qa.utils;
 
 import java.io.IOException;
 import java.lang.reflect.Constructor;
@@ -20,7 +20,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-import Entrata.Assessment.core.BaseClass;
+import endlink.qa.core.BaseClass;
 
 public class ListenerAndReportManager implements ITestListener, IAnnotationTransformer {
 
@@ -116,14 +116,14 @@ public class ListenerAndReportManager implements ITestListener, IAnnotationTrans
 			logger = extent.createTest("Test case method : " + result.getName());
 			logger.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " - Test case passed ", ExtentColor.GREEN));
 
-			try {
-				String imgPath = new BaseClass().captureScreen(result.getName());
-				System.out.println(imgPath);
-				logger.addScreenCaptureFromPath(imgPath);
-			} catch (Exception e1) {
-
-				System.out.println("Failure to take screenshot "+e1);
-			}
+//			try {
+//				String imgPath = new BaseClass().captureScreen(result.getName());
+//				System.out.println(imgPath);
+//				logger.addScreenCaptureFromPath(imgPath);
+//			} catch (Exception e1) {
+//
+//				System.out.println("Failure to take screenshot "+e1);
+//			}
 		}
 		
          // This method will run after all tests complete.

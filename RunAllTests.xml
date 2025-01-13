@@ -3,7 +3,7 @@
 <suite name="Suite">
 	
   <listeners>
-      <listener class-name="Entrata.Assessment.utils.ListenerAndReportManager"/>
+      <listener class-name="endlink.qa.utils.ListenerAndReportManager"/>
   </listeners>
   
   <test thread-count="5" name="Test">
@@ -12,11 +12,10 @@
       <parameter name="os" value="MAC"/>
 	
      <classes>
-
-         <class name="Entrata.Assessment.tests.LoginTest"/>
-
-       </classes>
-	
+         <class name="endlink.qa.tests.loginTest"></class>
+         <class name="endlink.qa.tests.MessageTest"></class>
+         <class name="endlink.qa.tests.addCoworkerTest"></class>
+     </classes>
   </test> <!-- Test -->
   
 </suite> <!-- Suite -->

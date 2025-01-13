@@ -7,13 +7,13 @@
   <testcase classname="Entrata.Assessment.tests.PropertyManagerSignInTest" name="PropertyManagerSignIn" time="3.133"/>
   <testcase classname="Entrata.Assessment.tests.BrokenLinkTest" name="VerifyBrokenLinks" time="12.585"/>
   <testcase classname="Entrata.Assessment.tests.WatchDemoTest" name="verifyWatchDemoForm" time="1.586"/>
-  <testcase classname="Entrata.Assessment.core.BaseClass" name="@BeforeTest beforeTestMethod" time="0.0">
+  <testcase classname="endlink.qa.core.BaseClass" name="@BeforeTest beforeTestMethod" time="0.0">
     <ignored/>
   </testcase> <!-- @BeforeTest beforeTestMethod -->
-  <testcase classname="Entrata.Assessment.core.BaseClass" name="@BeforeTest beforeTestMethod" time="0.0">
+  <testcase classname="endlink.qa.core.BaseClass" name="@BeforeTest beforeTestMethod" time="0.0">
     <ignored/>
   </testcase> <!-- @BeforeTest beforeTestMethod -->
-  <testcase classname="Entrata.Assessment.core.BaseClass" name="@BeforeTest beforeTestMethod" time="0.0">
+  <testcase classname="endlink.qa.core.BaseClass" name="@BeforeTest beforeTestMethod" time="0.0">
     <ignored/>
   </testcase> <!-- @BeforeTest beforeTestMethod -->
 </testsuite> <!-- Test -->

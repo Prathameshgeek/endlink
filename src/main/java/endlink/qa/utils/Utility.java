@@ -1,4 +1,4 @@
-package Entrata.Assessment.utils;
+package endlink.qa.utils;
 
 import java.time.Duration;
 import java.util.Set;
@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import Entrata.Assessment.core.BaseClass;
+import endlink.qa.core.BaseClass;
 
 public class Utility extends BaseClass {
 	

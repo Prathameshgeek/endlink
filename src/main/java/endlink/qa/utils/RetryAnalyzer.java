@@ -1,4 +1,4 @@
-package Entrata.Assessment.utils;
+package endlink.qa.utils;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
