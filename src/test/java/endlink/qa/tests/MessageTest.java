@@ -19,7 +19,7 @@ public class MessageTest extends BaseClass {
         Assert.assertEquals(userSub, "New Sub");
 
         String message = "Hello! This is a test message.";
-       String lastMessage = mes.sendMessageAndVerify(message);
+        String lastMessage = mes.sendMessageAndVerify(message);
 
         Assert.assertEquals(lastMessage, message);
 
